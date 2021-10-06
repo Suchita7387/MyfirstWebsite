@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<div class="header" style="padding-bottom: 2%">
+    <img  src="1.jpg" alt="logo here" />
+    <h1>My First Website</h1>
+  </div>
+
+
+<!-- Content will go here -->
+<nav class="w3-bar w3-black"  style="margin-top :32px;">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#about" class="w3-button w3-bar-item">About Us</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact Us</a>
+</nav>
+
+<!-- Slide Show -->
+<section id="home" class="w3-center">
+  <img class="mySlides" src="1.jpg" style="width:100%;">
+  <img class="mySlides" src="2.jpg" style="width:100%;">
+  <img class="mySlides" src="2.jpg" style="width:100%;">
+
+
+
+  <h2 class="w3-wide">Hey All,</h2>
+  <p class="w3-opacity"><i>My Name is Suchita.</i></p>
+  <p class="w3-opacity"><i>This is my first Website.</i></p>
+  <p class="w3-opacity"><i>Heading my journey towards, professional Web Developer.</i></p>
+</section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px" id="about">
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>This our Orgnization</p>
+        
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="team1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="team2.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="team3.jpg" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+  <section class="w3-container w3-content w3-center" style="max-width:600px;margin-bottom: 1%" id="contact">
+      <form method="POST" target="_blank">
+          <h2>Contact Us</h2>
+          <input type="email" name="email" placeholder="enter your email" required>
+          <input type="text" name="name" placeholder="enter your name" required>
+          <textarea name="message" cols="30" rows="10"></textarea>
+          <button>Submit</button>
+        </form>
+        
+  </section>
+
+
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Suchita Satav</a>
+  </p>
+</footer>
+
+
+
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
